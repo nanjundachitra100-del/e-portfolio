@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chitrashree Gowda | Full-Stack Developer & Software Engineer</title>
+    <meta name="description" content="Portfolio of Chitrashree Gowda, Computer Science Engineering Student & Full-Stack Developer specializing in scalable backend systems, AI interfaces, and Web3 applications.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Lucide Icons for modern, crisp tech look -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- Canvas Particle Background -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Header Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>CG<span class="logo-bracket">/&gt;</span>
+            </a>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu">
+                <i data-lucide="menu" class="menu-icon"></i>
+                <i data-lucide="x" class="close-icon"></i>
+            </button>
+
+            <!-- Nav Links -->
+            <nav class="nav-links-wrapper" id="nav-links">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#contact" class="nav-link btn-nav-cta">Get In Touch</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        
+        <!-- 1. HERO SECTION -->
+        <section id="hero" class="hero-section">
+            <div class="hero-glow-1"></div>
+            <div class="hero-glow-2"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="location-badge reveal-item">
+                        <i data-lucide="map-pin" class="badge-icon"></i>
+                        <span>Greater Bengaluru Area</span>
+                    </div>
+                    
+                    <h1 class="hero-title reveal-item">
+                        Hi, I'm <span class="text-gradient">Chitrashree Gowda</span>
+                    </h1>
+                    
+                    <h2 class="hero-subtitle reveal-item">
+                        I am a <span id="typing-text" class="text-accent-glow"></span><span class="typing-cursor">|</span>
+                    </h2>
+                    
+                    <p class="hero-hook reveal-item">
+                        Building scalable backend systems, intelligent AI interfaces, and exploring the future of decentralized Web3 applications.
+                    </p>
+                    
+                    <div class="hero-ctas reveal-item">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View My Projects</span>
+                            <i data-lucide="arrow-right" class="btn-icon"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/chitrashree-gowda-74a9b236b" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 18px; height: 18px;"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            <span>Connect on LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Right Element (Interactive Terminal/Tech Stack visualization) -->
+                <div class="hero-visual reveal-item">
+                    <div class="terminal-mock">
+                        <div class="terminal-header">
+                            <div class="terminal-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <div class="terminal-title">developer.json</div>
+                        </div>
+                        <div class="terminal-body">
+                            <pre><code class="language-json">{
+  <span class="key">"name"</span>: <span class="val">"Chitrashree Gowda"</span>,
+  <span class="key">"role"</span>: <span class="val">"Full-Stack Developer"</span>,
+  <span class="key">"focus"</span>: [
+    <span class="val">"AI Integrations"</span>,
+    <span class="val">"Backend Architectures"</span>,
+    <span class="val">"Web3/Blockchain"</span>
+  ],
+  <span class="key">"status"</span>: <span class="val">"Always Learning"</span>,
+  <span class="key">"origin"</span>: <span class="val">"REVA University"</span>
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Scroll Indicator -->
+            <a href="#about" class="scroll-indicator" aria-label="Scroll to About Me section">
+                <span class="mouse">
+                    <span class="wheel"></span>
+                </span>
+                <span class="arrow"></span>
+            </a>
+        </section>
+
+        <!-- 2. ABOUT ME SECTION -->
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">About Me</span>
+                    <h2 class="section-title">My Journey & Focus</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-text-wrapper reveal-item">
+                        <p class="about-paragraph">
+                            I am a passionate Computer Science student at <strong>REVA University</strong> dedicated to creating high-impact software solutions. I thrive on bridging robust, logical backend architectures with intuitive front-end user experiences.
+                        </p>
+                        <p class="about-paragraph">
+                            Currently focusing on full-stack development, AI agent integration, and blockchain technologies, I aim to build secure, smart, and scale-ready digital products.
+                        </p>
+                        
+                        <!-- Core Pillars Infographic -->
+                        <div class="pillars-grid">
+                            <div class="pillar-card">
+                                <div class="pillar-icon-wrapper blue-glow">
+                                    <i data-lucide="server" class="pillar-icon"></i>
+                                </div>
+                                <h4>Backend Logic</h4>
+                                <p>Engineering clean APIs and structured, performant databases.</p>
+                            </div>
+                            <div class="pillar-card">
+                                <div class="pillar-icon-wrapper purple-glow">
+                                    <i data-lucide="cpu" class="pillar-icon"></i>
+                                </div>
+                                <h4>AI Integration</h4>
+                                <p>Deploying advanced LLM models and custom NLP processes.</p>
+                            </div>
+                            <div class="pillar-card">
+                                <div class="pillar-icon-wrapper cyan-glow">
+                                    <i data-lucide="link" class="pillar-icon"></i>
+                                </div>
+                                <h4>Web3 Exploration</h4>
+                                <p>Developing smart contracts and integrated dApps.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-stats-wrapper reveal-item">
+                        <div class="stats-card">
+                            <div class="stat-item">
+                                <div class="stat-number">B.E.</div>
+                                <div class="stat-label">Computer Science Eng.</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">3+</div>
+                                <div class="stat-label">Core Projects Finished</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">10+</div>
+                                <div class="stat-label">Technologies Mastered</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. TECHNICAL TOOLKIT & SKILLS SECTION -->
+        <section id="skills" class="skills-section section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">My Stack</span>
+                    <h2 class="section-title">Technical Toolkit</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <!-- Skill Filters -->
+                <div class="skills-filter reveal-item">
+                    <button class="filter-btn active" data-filter="all">All Skills</button>
+                    <button class="filter-btn" data-filter="languages">Languages</button>
+                    <button class="filter-btn" data-filter="frontend">Frontend</button>
+                    <button class="filter-btn" data-filter="backend">Backend</button>
+                    <button class="filter-btn" data-filter="web3">Web3 & Blockchain</button>
+                    <button class="filter-btn" data-filter="cloud-ai">Cloud & AI</button>
+                </div>
+
+                <!-- Skills Grid -->
+                <div class="skills-grid reveal-item">
+                    
+                    <!-- Languages -->
+                    <div class="skill-card" data-category="languages">
+                        <div class="skill-icon-header">
+                            <i data-lucide="code-2" class="skill-icon"></i>
+                            <span class="skill-cat-tag">Language</span>
+                        </div>
+                        <h3>Python</h3>
+                        <p class="skill-desc">Primary language for data science, AI workflows, and FastAPI backends.</p>
+                    </div>
+
+                    <div class="skill-card" data-category="languages">
+                        <div class="skill-icon-header">
+                            <i data-lucide="terminal" class="skill-icon"></i>
+                            <span class="skill-cat-tag">Language</span>
+                        </div>
+                        <h3>JavaScript</h3>
+                        <p class="skill-desc">Dynamic web development and Node.js server configurations.</p>
+                    </div>
+
+                    <div class="skill-card" data-category="languages">
+                        <div class="skill-icon-header">
+                            <i data-lucide="coffee" class="skill-icon"></i>
+                            <span class="skill-cat-tag">Language</span>
+                        </div>
+                        <h3>Java</h3>
+                        <p class="skill-desc">Solid object-oriented programming foundation and algorithmic logic.</p>
+                    </div>
+
+                    <div class="skill-card" data-category="languages">
+                        <div class="skill-icon-header">
+                            <i data-lucide="brackets" class="skill-icon"></i>
+                            <span class="skill-cat-tag">Language</span>
+                        </div>
+                        <h3>C</h3>
+                        <p class="skill-desc">Low-level systems understanding and memory management basics.</p>
+                    </div>
+
+                    <div class="skill-card" data-category="languages">
+                        <div class="skill-icon-header">
+                            <i data-lucide="database" class="skill-icon"></i>
+                            <span class="skill-cat-tag">Language</span>
+                        </div>
+                        <h3>SQL</h3>
+                        <p class="skill-desc">Relational database query design and optimization.</p>
+                    </div>
+
+                    <!-- Frontend -->
+                    <div class="skill-card" data-category="frontend">
+                        <div class="skill-icon-header">
+                            <i data-lucide="layout" class="skill-icon"></i>
+                            <span class="skill-cat-tag">Frontend</span>
+                        </div>
+                        <h3>HTML5 / CSS3</h3>
+                        <p class="skill-desc">Semantic page layouts and highly customized styling with modern CSS systems.</p>
+                    </div>
+
+                    <div class="skill-card" data-category="frontend">
+                        <div class="skill-icon-header">
+                            <i data-lucide="layout-template" class="skill-icon"></i>
+                            <span class="skill-cat-tag">Frontend</span>
+                        </div>
+                        <h3>Streamlit</h3>
+                        <p class="skill-desc">Rapidly creating and prototyping UI designs for machine learning and data tools.</p>
+                    </div>
+
+                    <!-- Backend Frameworks -->
+                    <div class="skill-card" data-category="backend">
+                        <div class="skill-icon-header">
+                            <i data-lucide="zap" class="skill-icon"></i>
+                            <span class="skill-cat-tag">Backend</span>
+                        </div>
+                        <h3>FastAPI</h3>
+                        <p class="skill-desc">High-performance asynchronous Python API frameworks with automatic swagger documentation.</p>
+                    </div>
+
+                    <div class="skill-card" data-category="backend">
+                        <div class="skill-icon-header">
+                            <i data-lucide="server" class="skill-icon"></i>
+                            <span class="skill-cat-tag">Backend</span>
+                        </div>
+                        <h3>Node.js</h3>
+                        <p class="skill-desc">Scalable server-side JS runtime used for Web3 integrations and middleware.</p>
+                    </div>
+
+                    <!-- Web3 & Blockchain -->
+                    <div class="skill-card" data-category="web3">
+                        <div class="skill-icon-header">
+                            <i data-lucide="lock" class="skill-icon"></i>
+                            <span class="skill-cat-tag">Web3</span>
+                        </div>
+                        <h3>Smart Contracts</h3>
+                        <p class="skill-desc">Writing secure, verifiable logic for decentralized execution layers.</p>
+                    </div>
+
+                    <div class="skill-card" data-category="web3">
+                        <div class="skill-icon-header">
+                            <i data-lucide="activity" class="skill-icon"></i>
+                            <span class="skill-cat-tag">Web3</span>
+                        </div>
+                        <h3>Shardeum Network</h3>
+                        <p class="skill-desc">Deploying decentralized solutions on EVM-compatible shard-based blockchains.</p>
+                    </div>
+
+                    <div class="skill-card" data-category="web3">
+                        <div class="skill-icon-header">
+                            <i data-lucide="link-2" class="skill-icon"></i>
+                            <span class="skill-cat-tag">Web3</span>
+                        </div>
+                        <h3>Ethers.js / MetaMask</h3>
+                        <p class="skill-desc">Connecting front-end web layers to cryptographic wallets and smart contracts securely.</p>
+                    </div>
+
+                    <!-- Cloud & AI -->
+                    <div class="skill-card" data-category="cloud-ai">
+                        <div class="skill-icon-header">
+                            <i data-lucide="cloud" class="skill-icon"></i>
+                            <span class="skill-cat-tag">Cloud</span>
+                        </div>
+                        <h3>AWS Cloud</h3>
+                        <p class="skill-desc">Leveraging cloud infrastructures to host, deploy, and scale web architectures.</p>
+                    </div>
+
+                    <div class="skill-card" data-category="cloud-ai">
+                        <div class="skill-icon-header">
+                            <i data-lucide="bot" class="skill-icon"></i>
+                            <span class="skill-cat-tag">AI</span>
+                        </div>
+                        <h3>OpenAI API</h3>
+                        <p class="skill-desc">Integrating large language models for natural conversational flow and completions.</p>
+                    </div>
+
+                    <div class="skill-card" data-category="cloud-ai">
+                        <div class="skill-icon-header">
+                            <i data-lucide="languages" class="skill-icon"></i>
+                            <span class="skill-cat-tag">AI</span>
+                        </div>
+                        <h3>Multilingual NLP</h3>
+                        <p class="skill-desc">Configuring natural language structures to parse and respond across multiple languages.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. FEATURED PROJECTS SECTION -->
+        <section id="projects" class="projects-section section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Portfolio</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="projects-grid">
+                    
+                    <!-- Project 1 -->
+                    <div class="project-card reveal-item">
+                        <div class="project-card-inner">
+                            <div class="project-header">
+                                <div class="project-icon-box">
+                                    <i data-lucide="message-square" class="project-icon"></i>
+                                </div>
+                                <span class="project-category">AI & NLP</span>
+                            </div>
+                            
+                            <h3 class="project-title">Vedic Guru – AI-Powered Multilingual Chatbot</h3>
+                            <p class="project-description">
+                                Developed a multilingual conversational AI application using FastAPI and the OpenAI API. Configured NLP logic to process chat requests and deliver automated quotes fluidly across Hindi, Sanskrit, and English.
+                            </p>
+                            
+                            <div class="project-tech-stack">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">FastAPI</span>
+                                <span class="tech-tag">OpenAI API</span>
+                                <span class="tech-tag">NLP</span>
+                            </div>
+                            
+                            <div class="project-links">
+                                <a href="#" class="project-link disabled" title="Repository is private">
+                                    <i data-lucide="git-branch" class="link-icon"></i>
+                                    <span>Private Repo</span>
+                                </a>
+                                <a href="#" class="project-link disabled" title="Demo offline">
+                                    <i data-lucide="external-link" class="link-icon"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-glow-effect"></div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card reveal-item">
+                        <div class="project-card-inner">
+                            <div class="project-header">
+                                <div class="project-icon-box">
+                                    <i data-lucide="wallet" class="project-icon"></i>
+                                </div>
+                                <span class="project-category">Web3 & Blockchain</span>
+                            </div>
+                            
+                            <h3 class="project-title">Web3 Wallet & Blockchain Integration</h3>
+                            <p class="project-description">
+                                Built a decentralized application interface featuring MetaMask integration and utilizing Ethers.js for secure blockchain transactions on the Shardeum network, focusing on seamless smart contract interactions.
+                            </p>
+                            
+                            <div class="project-tech-stack">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Ethers.js</span>
+                                <span class="tech-tag">Shardeum</span>
+                                <span class="tech-tag">MetaMask</span>
+                            </div>
+                            
+                            <div class="project-links">
+                                <a href="#" class="project-link disabled">
+                                    <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 15px; height: 15px;"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="#" class="project-link disabled">
+                                    <i data-lucide="external-link" class="link-icon"></i>
+                                    <span>dApp Link</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-glow-effect"></div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card reveal-item">
+                        <div class="project-card-inner">
+                            <div class="project-header">
+                                <div class="project-icon-box">
+                                    <i data-lucide="bar-chart-3" class="project-icon"></i>
+                                </div>
+                                <span class="project-category">Data & Finance</span>
+                            </div>
+                            
+                            <h3 class="project-title">Financial Sales Forecast Framework</h3>
+                            <p class="project-description">
+                                Engineered a metrics-driven sales forecasting model and data framework tailored for a high-volume Zomato-style service application to track, analyze, and project growth metrics.
+                            </p>
+                            
+                            <div class="project-tech-stack">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Data Analysis</span>
+                                <span class="tech-tag">Financial Modeling</span>
+                                <span class="tech-tag">Pandas</span>
+                            </div>
+                            
+                            <div class="project-links">
+                                <a href="#" class="project-link disabled">
+                                    <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 15px; height: 15px;"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="#" class="project-link disabled">
+                                    <i data-lucide="trending-up" class="link-icon"></i>
+                                    <span>View Framework</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-glow-effect"></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 3 & 6. EDUCATION & CERTIFICATIONS SECTION -->
+        <section id="education" class="education-section section-padding">
+            <div class="container">
+                <div class="education-grid">
+                    
+                    <!-- Education Column -->
+                    <div class="edu-col reveal-item">
+                        <div class="section-header-left">
+                            <span class="section-tag">Academic</span>
+                            <h2 class="section-title">Education</h2>
+                            <div class="title-underline-left"></div>
+                        </div>
+
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-card">
+                                    <span class="timeline-date">Graduating 2027</span>
+                                    <h3>Bachelor of Engineering (B.E.)</h3>
+                                    <h4 class="text-accent">Computer Science & Engineering</h4>
+                                    <p class="timeline-institution">REVA University</p>
+                                    <p class="timeline-desc">
+                                        Focusing on foundational software engineering systems, design patterns, computer architecture, databases, and advanced programming logic. Active participant in technical hackathons and blockchain research groups.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certifications Column -->
+                    <div class="cert-col reveal-item">
+                        <div class="section-header-left">
+                            <span class="section-tag">Credentials</span>
+                            <h2 class="section-title">Certifications</h2>
+                            <div class="title-underline-left"></div>
+                        </div>
+
+                        <div class="cert-grid">
+                            <div class="cert-card">
+                                <div class="cert-icon-wrapper">
+                                    <i data-lucide="award" class="cert-icon"></i>
+                                </div>
+                                <div class="cert-details">
+                                    <h3>Core Java Programming Basics</h3>
+                                    <p class="cert-issuer">Verified Credential</p>
+                                    <span class="cert-badge">Java Standard Edition</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. CONTACT SECTION -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Let's Connect</span>
+                    <h2 class="section-title">Start a Conversation</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="contact-card-wrapper reveal-item">
+                    <div class="contact-card">
+                        <div class="contact-glow"></div>
+                        <div class="contact-card-content">
+                            <h3>Interested in collaborating or discussing Web3, AI, or Full-Stack projects?</h3>
+                            <p>Feel free to reach out directly. Copy my email address below or connect with me via social channels.</p>
+                            
+                            <!-- Email copy widget -->
+                            <div class="email-widget">
+                                <div class="email-address" id="email-address">nanjundachitra100@gmail.com</div>
+                                <button class="btn-copy" id="btn-copy-email" aria-label="Copy email address to clipboard">
+                                    <i data-lucide="copy" class="copy-icon"></i>
+                                    <span class="copy-text">Copy</span>
+                                </button>
+                            </div>
+
+                            <div class="contact-socials">
+                                <a href="https://www.linkedin.com/in/chitrashree-gowda-74a9b236b" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile">
+                                    <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 16px; height: 16px;"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                                    <span>LinkedIn</span>
+                                </a>
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile">
+                                    <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 16px; height: 16px;"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                                    <span>GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <span class="logo-bracket">&lt;</span>Chitrashree Gowda<span class="logo-bracket">/&gt;</span>
+            </div>
+            <div class="footer-center">
+                <p>&copy; 2026 Chitrashree Gowda. Built with passion.</p>
+            </div>
+            <div class="footer-right">
+                <a href="#hero" class="back-to-top" aria-label="Scroll back to top">
+                    <i data-lucide="chevrons-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Script File -->
+    <script src="script.js"></script>
+</body>
+</html>
